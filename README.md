@@ -1,4 +1,4 @@
-# SENSELET_PLUSPLUS
+# SENSELET++
 Github repo (code, hardware files) for 
 
 **SENSELET++: A Low-cost Internet of Things Sensing Platform for Academic Cleanrooms**
