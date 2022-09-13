@@ -6,7 +6,7 @@ Please follow instructions from the docker website
 ## setup influxdb with persistent storage
 ```bash
 # ATTENTION that "$PWD" is host directory to store PERSISTED container data (when InfluxDB crashes, data still reside here. In that situation, just run this command again to recover data from old instance), this could be changed to any directory you want.
-sudo docker run -d -p 8086:8086 -v $PWD:/var/lib/influxdb influxdb
+sudo docker run -d -p 8086:8086 -v $PWD:/var/lib/influxdb influxdb:1.8
 ```
 ## setup grafana with persistent storage
 ```bash
