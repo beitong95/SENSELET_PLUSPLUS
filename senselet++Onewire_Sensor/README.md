@@ -95,7 +95,7 @@
     ```bash
     ssh to the edge device: ssh -p 22 pi@ip_address_of_the_device
     screen
-    python3 -u "your path to senseletOnewire.py" 2>&1 | tee -i log.txt
+    sudo python3 -u "your path to senseletOnewire.py" 2>&1 | tee -i log.txt
     ctrl+A; ctrl+D [exit screen]
     ctrl+D[exit ssh session]
     ```
