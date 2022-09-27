@@ -86,9 +86,9 @@
     **[auto run]**
     add a daemon or add a command line in /etc/rc.local # actually, we dont need to add sudo because all commands run in the rc.local are run by sudoer. 
     ```bash
-    sudo python3 "your path to senseletOnewire.py" & #[add this line if you dont need log]
-    sudo python3 "your path to senseletOnewire.py" 2>&1 "your path to the log file" #[if you want a log]
-    sleep 30;bash /home/pi/onewire.sh;python3 -u "your path to senseletOnewire.py" 2>&1 | tee -i /some paths/"$(date '+%F-%T')_log.txt"& #[use this if you don't want to overwrite old log files everytime the raspberry pi reboots]
+    sleep 30;bash /home/pi/onewire.sh;sudo python3 "your path to senseletOnewire.py" & #[add this line if you dont need log]
+    sleep 30;bash /home/pi/onewire.sh;sudo python3 "your path to senseletOnewire.py" 2>&1 "your path to the log file" #[if you want a log]
+    sleep 30;bash /home/pi/onewire.sh;sudo python3 -u "your path to senseletOnewire.py" 2>&1 | tee -i /some paths/"$(date '+%F-%T')_log.txt"& #[use this if you don't want to overwrite old log files everytime the raspberry pi reboots]
     ```
     
     **[manully run]**
